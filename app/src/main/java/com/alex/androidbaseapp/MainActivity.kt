@@ -14,11 +14,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.liveData
 import com.alex.androidbaseapp.ui.theme.AndroidBaseAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import org.w3c.dom.Text
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

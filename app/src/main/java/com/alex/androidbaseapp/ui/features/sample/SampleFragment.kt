@@ -15,7 +15,9 @@ import androidx.fragment.app.viewModels
 import com.alex.androidbaseapp.R
 import com.alex.androidbaseapp.ui.features.sample.components.SampleText
 import com.alex.androidbaseapp.ui.theme.AndroidBaseAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SampleFragment : Fragment() {
 
     private val viewModel: SampleViewModel by viewModels()
@@ -37,6 +39,6 @@ class SampleFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        viewModel.doWork()
+        viewModel.getPosts()
     }
 }
